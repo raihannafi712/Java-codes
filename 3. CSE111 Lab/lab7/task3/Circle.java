@@ -1,11 +1,17 @@
 package lab7.task3;
 
-public class Circle {
-    public int circleRadiusMain;
+public class Circle extends Shape {
+    public int radius;
+    public String name;
+    public String color;
 
     public void area() {
-    
-      double area = Math.PI * circleRadiusMain * circleRadiusMain;
-      System.out.printf("Area of %s %s: %.2f\n", color, name, area);
+      double area = Math.PI * radius * radius;
+      System.out.println("Area of the circle: " + area);
+    }
+
+    public void displayInfo(){
+      System.out.println("Name: " + name);
+      System.out.println("Color: " + color);
     }
 }

@@ -1,23 +1,19 @@
 package lab8.task5;
 
 public class ComplexNumber extends RealNumber {
+    public double img;
 
-    private double imaginaryValue;
 
-    public ComplexNumber() {
-
+    public ComplexNumber(){
         super(1.0);
-        this.imaginaryValue = 1.0;
     }
 
-    public ComplexNumber(double realValue, double imaginaryValue) {
-
-        super(realValue);
-        this.imaginaryValue = imaginaryValue;
+    public ComplexNumber(double r , double i){
+        realValue = r;
+        img = i;
     }
 
-    public String toString() {
-        
-        return super.toString() + "\nImaginaryPart: " + imaginaryValue;
+    public String toString(){
+        return super.toString() + "\nImaginaryPart: " + img;
     }
 }

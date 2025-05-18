@@ -1,62 +1,55 @@
 package lab7.task1;
 
 public class BrowserHistory {
-    public int countMain;
-    private String[] historyMainOld;
-    private int currentIndex;
-  
-    public BrowserHistory(int size) {
 
-      historyMainOld = new String[size];
-      countMain = 0;
-      currentIndex = -1;
-    }
-  
-    public void visitWeb(String url) {
+  public int count = 0;
+  public int maxPage;
+  public String[] history;
+  public int currentIndex = -1;
 
-      if (countMain < historyMainOld.length) {
-        
-        countMain++;
-        currentIndex++;
-        historyMainOld[currentIndex] = url;
-        System.out.println("Visited: " + url);
-      } else {
 
-        System.out.println("historyMainOld is full. Cannot visit " + url + " web page.");
+  public BrowserHistory(int n){
+    maxPage = n;
+    history = new String[maxPage];
+  }
+
+  public void showHistory(){
+    if (count > 0) {
+      System.out.println("Browsing History: ");
+      for (int i = 0; i < count; i++) {
+        System.out.println(history[i]);
       }
+    } else {
+      System.out.println("No web pages visited yet!");
     }
-  
-    public void showhistoryMainOld() {
+  }
 
-      if (countMain == 0) {
-        System.out.println("No web pages visited yet.");
-      } else {
-
-        System.out.println("Browser historyMainOld:");
-        for (int i = 0; i < countMain; i++) {
-
-          System.out.println(historyMainOld[i]);
-        }
-      }
+  public void currentWeb(){
+    if (count > 0) {
+      System.out.println("Current web page: " + history[currentIndex]);
+    }else{
+      System.out.println("You have not visited any website yet!");
     }
-  
-    public void currentWeb() {
+  }
 
-      if (currentIndex == -1) {
-
-        System.out.println("You have not visited any website yet!");
-      } else {
-
-        System.out.println("Current web page: " + historyMainOld[currentIndex]);
-      }
+  public void visitWeb(String w){
+    if (count < maxPage) {
+      history[count] = w;
+      currentIndex = count;
+      count++;
+      System.out.println("Visited: " + w);
+    }else{
+      System.out.println("History is full. Cannot visit");
+      System.out.println(w);
     }
-  
-    public void back() {
+  }
 
-      if (currentIndex > -1) {
-
-        currentIndex--;
-        countMain--;
-      }
+  public void back(){
+    if (count > 0) {
+      count--;
+      currentIndex--;
+    } else if (currentIndex < 0){
+      System.out.println("You have not visited any website yet!");
     }
+  }
 }  

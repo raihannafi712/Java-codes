@@ -1,23 +1,21 @@
 package lab8.task6;
 
 public class Manager extends Employee {
+    public double bonus;
 
-    public double mainBonusPercentage;
-
-    public Manager(String name, double baseSalary, int hoursWorked, double mainBonusPercentage) {
-
+    public Manager(String name, double baseSalary, int hoursWorked , double b){
         super(name, baseSalary, hoursWorked);
-        this.mainBonusPercentage = mainBonusPercentage;
+        bonus = b;
     }
 
-    public void calculateSalary() {
+      public void calculateSalary() {
 
         if (getHoursWorked() > 40) {
 
-            double bonusAmount = getBaseSalary() * (mainBonusPercentage / 100);
+            double bonusAmount = getBaseSalary() * (bonus / 100);
             double newSalary = getBaseSalary() + bonusAmount;
             setBaseSalary(newSalary);
-            System.out.println("Bonus: " + mainBonusPercentage + " %");
+            System.out.println("Bonus: " + bonus + " %");
             System.out.println("Final Salary: $" + newSalary);
         }
     }

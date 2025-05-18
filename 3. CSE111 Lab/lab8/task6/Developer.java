@@ -1,18 +1,16 @@
 package lab8.task6;
 
 public class Developer extends Employee{
+    public String prog;
 
-    public String languageMainOne;
-
-    public Developer(String name, double baseSalary, int hoursWorked, String languageMainOne) {
-
+    public Developer(String name, double baseSalary, int hoursWorked , String p){
         super(name, baseSalary, hoursWorked);
-        this.languageMainOne = languageMainOne;
+        prog = p;
     }
 
     public void calculateSalary() {
 
-        if (languageMainOne.equals("Java")) {
+        if (prog.equals("Java")) {
 
             double newSalary = getBaseSalary() + 700;
             setBaseSalary(newSalary);
@@ -24,7 +22,8 @@ public class Developer extends Employee{
         System.out.println("Name: " + name);
         System.out.println("Base Salary: $" + getBaseSalary());
         System.out.println("Work Hours: " + getHoursWorked());
-        System.out.println("Language: " + languageMainOne);
+        System.out.println("Language: " + prog);
         System.out.println("Final Salary: $" + getBaseSalary());
     }
+   
 }

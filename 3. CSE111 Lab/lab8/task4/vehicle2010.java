@@ -1,21 +1,19 @@
 package lab8.task4;
 
-public class vehicle2010 {
+public class Vehicle2010 extends Vehicle {
     
-    public void moveLowerLeft() {
 
+    public void moveLowerLeft(){
         moveDown();
         moveLeft();
     }
 
-    public void moveUpperRight() {
-
+    public void moveUpperRight(){
         moveUp();
         moveRight();
     }
 
-    public void moveLowerRight() {
-
+    public void moveLowerRight(){
         moveDown();
         moveRight();
     }

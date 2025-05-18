@@ -1,14 +1,9 @@
 package lab6;
 
-// import OOP.multiClass.Student;
-// import javafx.scene.shape.Circle;
+public class Tester {
 
-// import lab6.design.Product;
-
-public class tester {
-   
-    // TASK 1
-    //      public static void main(String[] args) {
+    // // TASK 1
+    // public static void main(String[] args) {
     //     System.out.println("< —--—----1—-------->");
     //     Product product1 = new Product();
     //     product1.displayInfo();
@@ -19,14 +14,12 @@ public class tester {
     //     System.out.println("< —--—----3—-------->");
     //     System.out.println("Retrieved Price: $" + product2.getPrice());
     //     System.out.println("Retrieved Quantity: " + product2.getQuantity());
-    //    }
+    // }
 
 
 
 
-
-    // TASK 2
-
+    // // TASK 2
     // public static void main(String args[]){
     //     System.out.println("Total Passenger: "+ Passenger.no_of_passenger);
     //     System.out.println("Total Fare: "+ Passenger.total_fare + " TK");
@@ -49,7 +42,7 @@ public class tester {
 
 
 
-    // TASK 3
+    // // TASK 3
 
     // public static void main(String[] args) {
     //     System.out.println("Total Books Sold: " + Book.total_books_sold);
@@ -78,7 +71,7 @@ public class tester {
 
 
 
-    // TASK 4
+    // // TASK 4
 
     //  public static void main(String[] args) {
     //     System.out.println("Total Circle: "+ Circle.count);
@@ -99,7 +92,7 @@ public class tester {
 
 
 
-    // TASK 5
+    // // TASK 5        /* Needs to be fixed */
 
     // public static void main(String args[]){
     //     Borrower.bookStatus();
@@ -131,48 +124,50 @@ public class tester {
 
 
 
-    // TASK 6
 
-    // public static void main(String[] args) {
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //     System.out.println("1====================");
-    //     Cargo a = new Cargo("Industrial Machinery", 4.5);
-    //     a.details();
-    //     System.out.println("2====================");
-    //     a.load();
-    //     System.out.println("3====================");
-    //     Cargo b = new Cargo("Steel Ingot", 2.7);
-    //     b.details();
-    //     System.out.println("4====================");
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //     System.out.println("5====================");
-    //     b.load();
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //     System.out.println("6====================");
-    //     Cargo c = new Cargo("Tree Trunks", 3.6);
-    //     c.load();
-    //     System.out.println("7====================");
-    //     c.details();
-    //     b.details();
-    //     System.out.println("8====================");
-    //     Cargo d = new Cargo("Processed Goods", 1.8);
-    //     d.load();
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //     System.out.println("9====================");
-    //     b.unload();
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //     System.out.println("10====================");
-    //     c.load();
-    //     System.out.println("11====================");
-    //     b.details();
-    //     System.out.println("Cargo Capacity: "+ Cargo.capacity());
-    //   }
+//     // TASK 6
 
-
-
+//     public static void main(String[] args) {
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//         System.out.println("1====================");
+//         Cargo a = new Cargo("Industrial Machinery", 4.5);
+//         a.details();
+//         System.out.println("2====================");
+//         a.load();
+//         System.out.println("3====================");
+//         Cargo b = new Cargo("Steel Ingot", 2.7);
+//         b.details();
+//         System.out.println("4====================");
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//         System.out.println("5====================");
+//         b.load();
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//         System.out.println("6====================");
+//         Cargo c = new Cargo("Tree Trunks", 3.6);
+//         c.load();
+//         System.out.println("7====================");
+//         c.details();
+//         b.details();
+//         System.out.println("8====================");
+//         Cargo d = new Cargo("Processed Goods", 1.8);
+//         d.load();
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//         System.out.println("9====================");
+//         b.unload();
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//         System.out.println("10====================");
+//         c.load();
+//         System.out.println("11====================");
+//         b.details();
+//         System.out.println("Cargo Capacity: "+ Cargo.capacity());
+//       }
 
 
-    // TASK 7
+
+
+
+
+    // // TASK 7
 
     //  public static void main(String[] args) {
     //     Student.printDetails();
@@ -197,7 +192,7 @@ public class tester {
 
 
 
-    // TASK 8
+    // // TASK 8
 
     // public static void main(String[] args) {
     //     System.out.println("Total number of players: " + Player.total);
@@ -222,17 +217,5 @@ public class tester {
     //     System.out.println("===================");
     //     Player.info();
     //   }
-    
-
-    
-    
-
-    
-
-
-    
-
-
-
 
 }
