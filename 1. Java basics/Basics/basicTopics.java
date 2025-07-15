@@ -1,10 +1,11 @@
 // import java.util.Arrays;
 // import java.util.Scanner;
 
-import java.util.ArrayList;
 
 public class basicTopics {
     public static void main(String[] args) {
+
+        // This space from the public keyword is called identation
         
         // 1. Data types  (Primitive and Non-primitive)
 
@@ -34,6 +35,61 @@ public class basicTopics {
 
         // int x;         /* x variable has been declared but not initialized */
         // x = 5;         /* x variable has been initialized */
+
+
+        // S.O.P line break
+        // System.err.print("Start");
+        // System.out.println("Middle"); /* The latter line will have a break */
+        // System.out.print("End");
+
+
+
+        // Datatype conversion  (Explicit and Implicit casting)
+
+        // Explicit/Narrowing casting-  (Higher data types to lower)
+
+        // double d = 5.998;
+        // byte data = (byte)d;
+        // System.out.println(data);
+
+        // int s = 5;
+        // byte g = (byte)s;
+        // System.out.println(g);
+
+
+        // Implicit/Widening casting-   (Lower to higher)
+
+        // byte b = 10;
+        // double dd = b;
+        // System.out.println(dd);
+
+
+        // Numeric to non numeric
+
+        // // Int to String
+        // int haha = 50;
+        // String h2 = String.valueOf(haha);
+        // System.out.println(h2);
+
+        // // String to Integer
+        // String h3 = "40";
+        // int n = Integer.parseInt(h3);
+        // System.out.println(n);
+
+        // // Int to Char
+        // int hehe = 44;
+        // char c = (char)hehe;
+        // System.out.println(c);      /* ASCII value is shown */
+
+        // // Char to int
+        // char cc = 'Z';
+        // int gg = (int)cc;
+        // System.out.println(gg);
+
+
+
+
+
 
 
 
@@ -93,12 +149,15 @@ public class basicTopics {
         // System.out.println(ami++);
 
         // int d = 10;
-        // int e = d++;
-        // int f = d--;
-
         // System.out.println(d);
+        // int e = d++;
         // System.out.println(e);
+        // System.out.println(d);
+        // int f = d--;
         // System.out.println(f);
+        // System.out.println(d);
+
+
 
         //                                       /* Unary operators end*/
 
@@ -146,6 +205,12 @@ public class basicTopics {
         //   31 = 1 1 1 1 1             /* No addition or substraction here.if there's one false like 0 and 1 then it is 0 in the results */
 
 
+
+
+
+        // Operator precedence
+
+        // If all the operators are from the same precedence,then left to right solve while maintaining BODMAS
 
 
 
