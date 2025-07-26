@@ -250,14 +250,57 @@ public class practiceProblems {
 
             // Spring final solve
 
-            String [] planets = {"Mercury" , "Venus" , "Earth" , "Mars" , "Jupiter"};
-            double[] x_coordinates = {0.39 , 0.72 , 1.00 ,1.52 , -5.20 };
-            double[] y_coordinates = {0.24 , 0.00 , 0.00 ,0.99 ,  2.86 };
-            double[] z_coordinates = {-0.10 , 0.44 , -0.02 ,0.21 , 0.42};
+            // String [] planets = {"Mercury" , "Venus" , "Earth" , "Mars" , "Jupiter"};
+            // double[] x_coordinates = {0.39 , 0.72 , 1.00 ,1.52 , -5.20 };
+            // double[] y_coordinates = {0.24 , 0.00 , 0.00 ,0.99 ,  2.86 };
+            // double[] z_coordinates = {-0.10 , 0.44 , -0.02 ,0.21 , 0.42};
+
+            // Scanner sc = new Scanner(System.in);
+            // System.out.println("Enter planet: "+ (32 % 8) );
+            // String planet = sc.nextLine();
+
+            // int x = 22;
+
+            // x--;
+
+            // System.out.println(4*x);
 
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter planet: ");
-            String planet = sc.nextLine();
+            System.out.println("Enter Number: " );
+            int n = sc.nextInt();
+
+            int sum = 0;
+            int first_num = 0;
+            int last_num = 0;
+            int count = 0;
+            int temp = n;
+
+            while (temp > 0) {
+                temp = temp / 10;
+                count ++;
+            }
+
+            while (n > 0) {
+                // First num (10^n-1)
+                first_num= n/(int)Math.pow(10,( count-1));
+                n = n % (int)Math.pow(10, count-1);
+                // Last num
+                last_num = n % 10;
+                n = n/10;
+
+                sum = first_num + last_num;
+                System.out.print(sum + " ");
+                
+                sum = 0;
+                count = count - 2;
+            }
+
+
+
+
+
+
+
 
             
 

@@ -144,9 +144,13 @@ public class basicTopics {
 
         // int ami = 5;
 
-        // System.out.println(ami++);
-        // System.out.println(ami++);
-        // System.out.println(ami++);
+        // System.out.println(ami++);  /* ami = 5 */
+        // System.out.println(ami++);  /* ami = 6 */
+        // System.out.println(ami++);  /* ami = 7 */
+        // System.out.println(ami);    /* ami = 8 */
+
+        // ami--;                      /* Next output will have ami = 7 */
+        // System.out.println(ami);    /* ami = 7 */
 
         // int d = 10;
         // System.out.println(d);
